@@ -234,3 +234,8 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 //copyright code & ♯ 𝐑eBeL .#0001 ©
+
+
+
+
+client.login(process.env.BOT_TOKEN);
