@@ -7,7 +7,20 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
+
+ client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : Hamo`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Hamo ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`CopTan`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
  
+
+
 /*
 البكجآت
 npm install discord.js
@@ -19,16 +32,6 @@ npm install queue
 */
  
  
- client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : Hamo`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Hamo ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`CopTan`,"http://twitch.tv/S-F")
-client.user.setStatus("dnd")
-});
  
  
  
@@ -42,7 +45,7 @@ client.on('ready', () => {
 });
  
 //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-const prefix = "#"
+const prefix = "$"
 client.on('message', async msg => { // eslint-disable-line
     if (msg.author.bot) return undefined;
     //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
