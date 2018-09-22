@@ -26,7 +26,7 @@ npm install queue
       console.log(`ON ${client.guilds.size} Servers '     Script By : Hamo ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`ٱڪتب ٱڵ تبي هہنٱ`,"http://twitch.tv/S-F")
+client.user.setGame(`CopTan`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
  
