@@ -8,19 +8,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
 
- client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : Hamo`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Hamo ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`CopTan`,"http://twitch.tv/S-F")
-client.user.setStatus("dnd")
-});
  
-
-
 /*
 البكجآت
 npm install discord.js
@@ -240,5 +228,16 @@ function play(guild, song) {
 
 
 
+ client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : Hamo`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Hamo ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`CopTan`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
+  
 
 client.login(process.env.BOT_TOKEN);
