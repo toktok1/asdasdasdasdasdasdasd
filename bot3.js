@@ -20,7 +20,7 @@ client.on('message', msg => {
 
  
 client.on('message', msg => {
-  if (msg.content === 'برب ') {
+  if (msg.content === 'برب') {
     msg.reply(':wink: :eight_pointed_black_star:تيت الله معك يحلو لا تطول :eight_pointed_black_star: :wink:!');
   }
 });
