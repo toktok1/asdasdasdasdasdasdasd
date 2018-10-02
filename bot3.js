@@ -58,7 +58,7 @@ client.on("message", message => {
       .setColor("RANDOM")
       .addField("『Bot 1 | Arab Community』 『اسم البوت』", true)
      
-      .addField("『مصمم البوت iTzAnan_Over#3412』", true)
+      .addField("『مصمم البوت CRIMINAL MINDS』", true)
      
       .addField("『!help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
      
