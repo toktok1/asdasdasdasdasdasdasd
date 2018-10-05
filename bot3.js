@@ -1294,6 +1294,71 @@ message.channel.send(`** ${message.author.username}, your :credit_card: balance 
 }
 });
  
+
+
+
+
+client.on('message', message => {   
+if (message.author.boss) return;
+var prefix = "!";
+if (!message.content.startsWith(prefix)) return;
+let command = message.content.split(" ")[0];
+command = command.slice(prefix.length);
+let args = message.content.split(" ").slice(1);
+if (command == "mute") {
+if (!message.channel.guild) return;
+if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("انت لا تمتلك صلاحيه BAN_MEMBERS").then(msg => msg.delete(5000));
+if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("انا لا امتلك صلاحيه BAN_MEMBERS").then(msg => msg.delete(5000));;
+let user = message.mentions.users.first();
+let muteRole = message.guild.roles.find("name", "Muted");
+if (!muteRole) return message.reply("** لا يوجد رتبة الميوت 'Muted' **").then(msg => {msg.delete(5000)});
+if (message.mentions.users.size < 1) return message.reply('** يجب عليك المنشن اولاً **').then(msg => {msg.delete(5000)});
+let reason = message.content.split(" ").slice(2).join(" ");
+message.guild.member(user).addRole(muteRole);
+const muteembed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setTitle('**Noobbot**')
+        .setDescription(`**Done Mute ${user}
+By ${message.author.username}** `)
+message.channel.send({embed : muteembed});
+var muteembeddm = new Discord.RichEmbed()
+.setAuthor(`Muted!`, user.displayAvatarURL)
+.setDescription(`
+انت معاقب بميوت! 
+ ${message.author.tag} من قبل
+[ ${reason} ] السبب
+`)
+.setFooter(`في سيرفر : ${message.guild.name}`)
+.setColor("RANDOM")
+ user.send( muteembeddm);
+}
+
+
+  if (command == "unmute") {
+if (!message.channel.guild) return;
+if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("انتا لا تملك صلاحيات").then(msg => msg.delete(5000));
+if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("البوت لايملك صلاحيات ").then(msg => msg.delete(5000));;
+let user = message.mentions.users.first();
+let muteRole = message.guild.roles.find("name", "Muted");
+if (!muteRole) return message.reply("** لا يوجد رتبة الميوت 'Muted' **").then(msg => {msg.delete(5000)});
+if (message.mentions.users.size < 1) return message.reply('** يجب عليك المنشن اولاً **').then(msg => {msg.delete(5000)});
+let reason = message.content.split(" ").slice(2).join(" ");
+message.guild.member(user).removeRole(muteRole);
+const unmuteembed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setTitle('**Noobbot**')
+        .setDescription(`**Done Unmute ${user}
+By ${message.author.id}** `)
+message.channel.send({embed : unmuteembed}).then(msg => msg.delete(5000));
+var unmuteembeddm = new Discord.RichEmbed()
+.setDescription(`**تم فك الميوت عنك ${user} | :white_check_mark:`)
+.setAuthor(`UnMute!`, user.displayAvatarURL)
+.setColor("RANDOM")
+  user.send( unmuteembeddm);
+}
+});
+
+
  
  
  
