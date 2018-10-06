@@ -1449,4 +1449,20 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
  
  
  
+ 
+  
+  
+  
+  client.on('message', message => {
+    if(message.content.includes('discord.gg/')) {
+        if(message.member.hasPermission('ADMINISTRATOR')) return;
+        message.delete();
+        var muteRole = message.guild.roles.find(r => r.name === 'Muted');
+        message.guild.member(message.author).addRole(muteRole.id);
+        message.channel.send(`تم اسكات ${message.author} بسبب نشره لروابط سيرفرات`);
+    }
+});
+ 
+ 
+ 
 client.login(process.env.BOT_TOKEN3);
