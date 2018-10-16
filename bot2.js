@@ -1288,6 +1288,32 @@ var unmuteembeddm = new Discord.RichEmbed()
 }
 });
  
+client.on('message', msg => {
+  if (msg.content === 'باك') {
+    msg.reply(':heart: :ok_hand:ولكم منور يقلبي :heart: :ok_hand:!');
+  }
+});
+ 
+ 
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+    msg.reply(':two_hearts:وُعٌلُيُڪمْ آلُڛلُآمْ وُرحمْة آلُلُﮩ وُبُرڪآتْوُ:two_hearts:!');
+  }
+});
+ 
+ 
+client.on('message', msg => {
+  if (msg.content === 'برب') {
+    msg.reply(':wink: :eight_pointed_black_star:تيت الله معك يحلو لا تطول :eight_pointed_black_star: :wink:.!');
+  }
+});
+ 
+ 
+client.on('message', msg => {
+  if (msg.content === '!') {
+    msg.reply('Welcome To server!');
+  }
+});
  
  
  
