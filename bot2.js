@@ -734,7 +734,7 @@ client.on("guildCreate", guild => {
 client.on('message', message => {
     var prefix = "!";         //<=== هنا تقدر تغير البريفكس
    if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + 'مسح')) {            //Codes Development .
+if(message.content.startsWith(prefix + 'clear')) {            //Codes Development .
 if(!message.channel.guild) return message.channel.send('**This Command is Just For Servers**').then(m => m.delete(5000));         //Codes Development .
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return      message.channel.send('**You Do not have permission** `MANAGE_MESSAGES`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);      //Codes Development .
