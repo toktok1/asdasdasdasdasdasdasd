@@ -1,8 +1,8 @@
 const fs = require('fs'); // npm i fs
 const ms = require('ms'); // npm i ms
-const prefix = "$";
 const cool = [];
 hero.on('message',async message => {
+    var prefix = "!";
   if(message.author.bot) return;
   if(message.channel.type === 'dm') return;
  
