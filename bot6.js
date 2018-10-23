@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 hero.on('message',async message => {
+    let prefix = '$';
 if(message.author.bot) return;
 if(message.channel.type === 'dm') return
   var room;
