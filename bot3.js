@@ -565,18 +565,7 @@ client.on('message', (message) => {
     }
 });
 
-client.on('message', (message) => {
-    if (message.content.startsWith('!باند ')) {
-      if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
-        var member= message.mentions.members.first();
-        member.ban().then((member) => {
-         message.channel.send(member.displayName + 'تم طرد هذا الشخص من السيرفر');
-        }).catch(() => {
-            message.channel.send('Error :_:');
-        });
-    }
-});
- 
+
   client.on("message", (message) => {
     if (message.content.startsWith('!delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
