@@ -566,7 +566,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-    if (message.content.startsWith('باند ')) {
+    if (message.content.startsWith('!باند ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
