@@ -78,9 +78,9 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Bot 1 | Arab Community』 『اسم البوت』", true)
+      .addField("『Bot 1 | CRIMINAL MINDS』 『اسم البوت』", true)
      
-      .addField("『مصمم البوت JUST MINDS』", true)
+      .addField("『مصمم البوت CM For Ever』", true)
      
       .addField("『!help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
      
