@@ -36,7 +36,7 @@ client.on('message', msg => {
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` JusT MindS `,"http://twitch.tv/S-F")
+client.user.setGame(` CM For Ever `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
