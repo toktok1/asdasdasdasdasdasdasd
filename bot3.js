@@ -29,7 +29,7 @@ client.on('message', msg => {
  
 client.on('message', msg => {
   if (msg.content === '!') {
-    msg.reply('Welcome To Jm 4 EveR!');
+    msg.reply('Welcome To CRIMINAL MINDS :revolving_hearts:,!');
   }
 });
  
