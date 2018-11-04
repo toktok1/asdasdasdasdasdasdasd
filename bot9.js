@@ -1,8 +1,8 @@
 
-var ServerID = "-"; //اي دي السيرفر
+var ServerID = "-"; //508309488395091979
 
 
-var ChannelID = "-";// اي دي الروم
+var ChannelID = "-";// 508708659992330244
 
 /*
 
