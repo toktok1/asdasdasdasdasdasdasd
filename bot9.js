@@ -14,7 +14,7 @@ client.on('message', msg => {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` RB 4 EveR `,"http://twitch.tv/S-F")
+client.user.setGame(` GalaXy Server ❣ `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -56,9 +56,9 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Bot 1 | RB 4 EveR 』 『اسم البوت』", true)
+      .addField("『Bot 1 | Galaxy Stars 』 『اسم البوت』", true)
      
-      .addField("『مصمم البوت Za ||→ CopTan㦵❣#1001』", true)
+      .addField("『مصمم البوت Galaxy Stars 』", true)
      
       .addField("『!help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
      
@@ -1311,7 +1311,7 @@ client.on('message', msg => {
  
 client.on('message', msg => {
   if (msg.content === '!') {
-    msg.reply('Welcome To RB 4 EveR!');
+    msg.reply('Welcome To Galaxy Stars :ribbon: ');
   }
 });
  
