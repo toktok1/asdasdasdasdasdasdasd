@@ -20,18 +20,12 @@ client.on('guildMemberAdd', member => {
   
     const embed = new Discord.RichEmbed()
     
-    .setColor("black")
+    .setColor("010101")
     .setDescription(`**تاريخ دخولك للدسكورد منذ ${createdAt.toFixed(0)} يوم**`)
     .setAuthor(member.user.tag, member.user.avatarURL);
     channel.sendEmbed(embed);
 
   
 });
-
-
-
-
-
-
 
 client.login(process.env.BOT_TOKEN8);
